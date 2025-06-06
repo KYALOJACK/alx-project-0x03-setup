@@ -1,11 +1,6 @@
-import { PageRouteProps } from "@/interface";
-
+import { PageRouteProps } from "@/interface"; // ✅ Importing from interface file
 import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
-
-interface PageRouteProps {
-  pageRoute: string;
-}
 
 export default function Home() {
   const router = useRouter();
@@ -47,12 +42,3 @@ export default function Home() {
     </div>
   );
 }
-
-const Home = () => {
-  return (
-   <div>
-    <h1> Welcome to Splash App </h1>
-   </div>
-}
-
-export default Home;
